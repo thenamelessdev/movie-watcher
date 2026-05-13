@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie Watcher
+A Netflix clone
 
-## Getting Started
+**This is just for learning and not meant to be used, does not include an auth system**
 
-First, run the development server:
+## Plan/todo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+It will store the movies in the movies/ folder. Each folder will be the movie's title with dashes instad of spaces. It will have a info.json for storing data about the movie (title, description, and some other info), a thumbnail file (png), and the movie file (mp4). You can watch and add movies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Todo:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[ ] - The system to view movies with good looking UI:
+    [ ] - GetMovies() to get 100 movies with the thumbnail url, title, and description
+    [ ] - GetMovie() to get a specific movie by title. It returns the title and the movie url
+[ ] - The ability to create and delete movies
+    [ ] - CreateMovie() to create a movie. Requires a title, thumbnail, description, and the movie itself, returns true of false based if it suceeded
+    [ ] - DeleteMovie() to delete a movie. Requires a title, returns true of false based if it suceeded
