@@ -10,8 +10,13 @@ It will store the movies in the movies/ folder. Each folder will be the movie's 
 **Todo:**
 
 [ ] - The system to view movies with good looking UI:
+
     [ ] - GetMovies() to get 100 movies with the thumbnail url, title, and description
+
     [ ] - GetMovie() to get a specific movie by title. It returns the title and the movie url
+
 [ ] - The ability to create and delete movies
+
     [ ] - CreateMovie() to create a movie. Requires a title, thumbnail, description, and the movie itself, returns true of false based if it suceeded
+    
     [ ] - DeleteMovie() to delete a movie. Requires a title, returns true of false based if it suceeded
