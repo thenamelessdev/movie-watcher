@@ -10,7 +10,7 @@ It will store the movies in the movies/ folder. Each folder will be the movie's 
 **Todo:**
 
 - [ ] The system to view movies with a good-looking UI
-    - [ ] `GetMovies()` — returns 100 movies, each with a thumbnail URL, title, and description
+    - [x] `GetMovies()` — returns 100 movies, each with a thumbnail URL, title, and description
     - [ ] `GetMovie(title)` — returns a specific movie's title and stream URL
 - [ ] The ability to create and delete movies
     - [ ] `CreateMovie(title, thumbnail, description, file)` — creates a movie, returns `true`/`false`
