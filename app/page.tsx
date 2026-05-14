@@ -1,8 +1,12 @@
 import MovieCard from '@/components/MovieCard';
+import { getMovies } from '@/lib/getMovies';
 import React from 'react'
 
-export default function MainPage() {
+export default async function MainPage() {
+  const movies = await getMovies()
   return (<>
-    <MovieCard title="Testing" description="This is a movie for testing" imageUrl="https://media1.tenor.com/m/qMH5o_XizbcAAAAd/but-here%27s-the-coder.gif"/>
+    {movies.map(m => (
+      <MovieCard title={m.title} description={m.description} imageUrl={m.thumbnailUrl}/>
+    ))}
   </>)
 }
