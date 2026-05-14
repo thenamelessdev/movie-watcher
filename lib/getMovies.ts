@@ -19,7 +19,7 @@ export async function getMovies(limit: number = 100) {
     const movieFolders = await fs.readdir(moviesDir);
 
     movieFolders.forEach(async m => {
-        if(movies.length <= 100) return
+        if(movies.length >= 100) return
         const moviePath = path.join(moviesDir, m)
         const infoPath = path.join(moviePath, "info.json")
         const infoFile = await fs.readFile(infoPath) as any
